@@ -1,5 +1,10 @@
 # cost-per-kept-meeting
 
+[![PyPI](https://img.shields.io/pypi/v/cost-per-kept-meeting)](https://pypi.org/project/cost-per-kept-meeting/)
+[![Python](https://img.shields.io/pypi/pyversions/cost-per-kept-meeting)](https://pypi.org/project/cost-per-kept-meeting/)
+[![CI](https://github.com/kanibal-studio/cost-per-kept-meeting/actions/workflows/ci.yml/badge.svg)](https://github.com/kanibal-studio/cost-per-kept-meeting/actions/workflows/ci.yml)
+[![MIT](https://img.shields.io/badge/license-MIT-blue)](https://github.com/kanibal-studio/cost-per-kept-meeting/blob/main/LICENSE)
+
 Compare B2B lead-generation sources (channels or vendors) on the **cost per kept qualified meeting** instead of the cost per lead. A small, single-file Python tool (standard library only, Python 3.9+): it reads a CSV file, prints a ranking, and never contacts any service.
 
 Method article: <https://altavista360.com/blog/cout-par-rendez-vous-generation-leads/>
@@ -16,6 +21,15 @@ The method, over one period and for each source:
 4. Do not stop there: a low cost per meeting does not prove profitability. When deals and margin are provided, the tool also reports the cost per closed deal and the margin minus the acquisition cost.
 
 Reported for each source and period: total cost, cost per lead, show rate (kept / booked), cost per kept meeting, cost per qualified kept meeting, cost per deal, margin minus cost.
+
+## Install
+
+```sh
+pip install cost-per-kept-meeting
+cost-per-kept-meeting sources.csv
+```
+
+The package installs the `cost-per-kept-meeting` command; from a clone, `python3 cost_per_kept_meeting.py` works the same way.
 
 ## Quick start
 
@@ -126,6 +140,15 @@ La méthode, sur une période et pour chaque source :
 4. Ne pas s'arrêter là : un faible coût par rendez-vous ne prouve pas la rentabilité. Quand les affaires conclues et la marge sont fournies, l'outil donne aussi le coût par affaire conclue et la marge moins le coût d'acquisition.
 
 Pour chaque source et chaque période : coût total, coût par lead, taux de présence (tenus / pris), coût par rendez-vous tenu, coût par rendez-vous qualifié tenu, coût par affaire, marge moins coût.
+
+## Installation
+
+```sh
+pip install cost-per-kept-meeting
+cost-per-kept-meeting sources.csv
+```
+
+Le paquet installe la commande `cost-per-kept-meeting` ; depuis un clone, `python3 cost_per_kept_meeting.py` fonctionne de la même façon.
 
 ## Démarrage rapide
 

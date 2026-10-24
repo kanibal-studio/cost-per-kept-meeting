@@ -46,7 +46,7 @@ from dataclasses import dataclass, field
 from decimal import ROUND_HALF_UP, Decimal
 from typing import Dict, FrozenSet, List, Optional, Sequence, TextIO, Tuple
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 
 EXIT_OK = 0
 EXIT_INVALID_INPUT = 2
@@ -620,7 +620,6 @@ def _non_negative_int(text: str) -> int:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog="cost_per_kept_meeting",
         description="Rank B2B lead sources on cost per kept qualified meeting "
         "instead of cost per lead. Reads a UTF-8 CSV file; no network access.",
         epilog="Exit codes: 0 success, 2 invalid input.",
@@ -643,7 +642,7 @@ def build_parser() -> argparse.ArgumentParser:
         default="en",
         help="labels of the text table (default: en); JSON and CSV keys never change",
     )
-    parser.add_argument("--version", action="version", version="%(prog)s " + __version__)
+    parser.add_argument("--version", action="version", version="cost-per-kept-meeting " + __version__)
     return parser
 
 
