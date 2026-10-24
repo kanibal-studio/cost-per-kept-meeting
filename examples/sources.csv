@@ -1,0 +1,6 @@
+source,period,cost_media,cost_data,cost_tools,cost_human_time,cost_other,leads,meetings_booked,meetings_kept,meetings_qualified_kept,deals_closed,gross_margin
+Example Purchased Lists,2026-10,0,2400,300,1800,0,1500,60,33,9,1,2500
+Example Outbound Calling,2026-10,0,900,350,2800,0,270,54,36,12,2,6000
+Example Paid Search,2026-10,2000,0,250,500,200,150,30,25,15,3,8400
+Example Paid Search,2026-10,1200,0,150,400,100,90,18,15,9,2,5600
+Example Partner Referrals,2026-10,0,0,150,900,1650,60,24,21,15,4,11000
