@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cost-per-kept-meeting"
+dynamic = ["version"]
+description = "Compare B2B lead sources on cost per kept qualified meeting, not cost per lead. Python standard library CLI, English and French labels."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "ALTA VISTA360, S.L.U." }]
+keywords = [
+    "lead-generation",
+    "b2b",
+    "sales",
+    "sales-analytics",
+    "marketing-analytics",
+    "csv",
+    "cli",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Office/Business",
+]
+
+[project.scripts]
+cost-per-kept-meeting = "cost_per_kept_meeting:main"
+
+[project.urls]
+Homepage = "https://github.com/kanibal-studio/cost-per-kept-meeting"
+Issues = "https://github.com/kanibal-studio/cost-per-kept-meeting/issues"
+PyPI = "https://pypi.org/project/cost-per-kept-meeting/"
+
+[tool.setuptools]
+py-modules = ["cost_per_kept_meeting"]
+
+[tool.setuptools.dynamic]
+version = { attr = "cost_per_kept_meeting.__version__" }

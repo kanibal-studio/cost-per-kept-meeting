@@ -46,7 +46,7 @@ from dataclasses import dataclass, field
 from decimal import ROUND_HALF_UP, Decimal
 from typing import Dict, FrozenSet, List, Optional, Sequence, TextIO, Tuple
 
-__version__ = "1.0.0"
+__version__ = "0.1.1"
 
 EXIT_OK = 0
 EXIT_INVALID_INPUT = 2
